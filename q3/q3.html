@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Number</title>
+</head>
+<body style="align-items: center; text-align: center;">
+    <h1 style="text-align: center;">Check The number with user input</h1>
+    <p>Although it is not asked to write in html ...I just write it additonally. Thanks</p>
+
+    <label for="userInput"></label>
+    <input type="number" id="userInput">
+    <button onclick="checkNumber()">Check</button>
+    <h2 style=" color: rgb(82, 132, 81);">The o/p is <span style="color: red;" id="result"></span> </h2>
+
+
+
+    <script>
+        const checkNumber = ()=>{
+            let userInput = document.getElementById('userInput').value;
+            let result = userInput>0 ? "positive" :(userInput<0?"negative":"zero")
+            alert(result)
+            document.getElementById("result").innerHTML = result;
+
+        }
+    </script>
+    
+</body>
+</html>
